@@ -99,7 +99,7 @@ namespace MultiLingualPlayings
 
         private string GetDefaultLanguage()
         {
-            return Thread.CurrentThread.CurrentUICulture.Name;
+            return "en";
         }
     }
 
