@@ -55,7 +55,7 @@ namespace MultiLingualPlayings
 
         public ProductTranslation GetProductInCurrentLanguageWithFallbackToDefault(int id)
         {
-            return GetEntityTranslationWithFallbacks<Product, ProductTranslation>(_context.ProductTranslations, 1);
+            return GetEntityTranslationWithFallbacks<Product, ProductTranslation>(_context.ProductTranslations, id);
         }
 
         private TTranslation GetEntityTranslationWithFallbacks<TEntity, TTranslation>(IQueryable<TTranslation> dbSet, int id)
